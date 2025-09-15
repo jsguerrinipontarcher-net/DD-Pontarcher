@@ -3,39 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livret de l'éco-délégué</title>
+  <title>Document 2</title>
   <style>
-body { 
-  font-family: Arial, sans-serif; 
-  margin: 0;
-  padding: 1rem; 
-  text-align: center;
-  background-color: #4CAF50; /* vert écolo */
-  color: #ffffff; /* texte blanc pour contraste */
-}
-   a { 
-  display: inline-block; 
-  margin-bottom: 1rem; 
-  text-decoration: none; 
-  color: #ffffff; 
-  font-weight: bold;
-}
-h1, h2 {
-  margin-bottom: 1rem;
-}
-    img {
+    /* Fond vert écolo et mise en page */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #4CAF50; /* vert écolo */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header avec boutons */
+    header {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #388E3C; /* vert plus foncé pour le header */
+    }
+
+    header a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fff;
+      border-radius: 8px;
+    }
+
+    /* Iframe PDF plein écran */
+    iframe {
+      flex: 1; /* prend tout l’espace restant */
       width: 100%;
-      max-width: 800px; /* limite la largeur sur grand écran */
-      border: 2px solid #4CAF50;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: none;
+    }
+
+    /* Titre centré */
+    h2 {
+      margin: 0;
+      text-align: center;
+      padding: 0.5rem 0;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">⬅ Retour</a>
-  <h2>Livret de l'éco-délégué</h2>
- <!-- PDF inséré -->
-  <iframe src="Guide de l'éco-délégué.pdf" width="100%" height="90vh" style="border:1px solid #ccc;" scrolling="yes"></iframe>
+
+  <header>
+    <a href="index.html">⬅ Retour</a>
+    <a href="Guide de l'éco-délégué.pdf" download>Télécharger PDF</a>
+  </header>
+
+  <h2>Document 2</h2>
+
+  <iframe src="Guide de l'éco-délégué.pdf"></iframe>
+
 </body>
 </html>
