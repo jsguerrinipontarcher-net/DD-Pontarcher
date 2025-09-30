@@ -19,22 +19,24 @@
       margin: 0;
     }
     .links {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 0 1rem;
-    }
-    a {
-      display: block;
-      padding: 1rem;
-      background: white;
-      color: #4CAF50;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;  /* espace uniforme entre toutes les lignes */
+  padding: 0 1rem;
+}
+
+.links a {
+  display: block;
+  padding: 1rem;
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  text-decoration: none;
+  /* pour s’assurer que tous les liens ont la même hauteur minimale */
+  min-height: 3rem;
+  box-sizing: border-box;
+}
     a:hover { background: #e0ffe0; }
   </style>
 </head>
